@@ -19,35 +19,43 @@ public class p11_1s21 {
 			numero1=teclado.nextInt();
 			numero2=teclado.nextInt();
 			resultado=numero1+numero2;
-			System.out.println("el resultado es " + resultado);
+			System.out.println("el resultado es: " + resultado);
 			break;
 		case "resta":
 			System.out.println("ingrese 2 numeros para la resta");
 			numero1=teclado.nextInt();
 			numero2=teclado.nextInt();
 			resultado=numero1-numero2;
-			System.out.println("el resultado es " + resultado);
+			System.out.println("el resultado es: " + resultado);
 			break;
 		case "multiplicacion":
 			System.out.println("ingrese 2 numeros para la multiplicacion");
 			numero1=teclado.nextInt();
 			numero2=teclado.nextInt();
 			resultado=numero1*numero2;
-			System.out.println("el resultado es " + resultado);
+			System.out.println("el resultado es: " + resultado);
 			break;
 		case "division":
-			System.out.println("ingrese 2 numeros para la division");
+			System.out.println("ingrese 1 numero para el  dividendo");
 			dividendo=teclado.nextInt();
+			System.out.println("ingrese 1 numero para el  divisor");
 			divisor=teclado.nextInt();
 			resultado=dividendo/divisor;
-			System.out.println("el resultado es " + resultado);
+			System.out.println("el resultado es: " + resultado);
 			break;
 		case "potencia":
 			System.out.println("ingrese la base para la potencia");
+			base=teclado.nextInt();
+			System.out.println("ingrese la potencia");
+			potencia=teclado.nextInt();
+			resultado = Math.pow(base,potencia);
+			System.out.println("el resultado es: " + resultado);
 			break;
 		case "raiz cuadrada":
 			System.out.println("ingrese un numero para la raiz cuadrada");
-
+			numero1=teclado.nextInt();
+			resultado = Math.sqrt(numero1);
+			System.out.println("el resultado es: " + resultado);
 			break;
 		default:
 			System.out.println("no existe esa operacion");
